@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Анкета</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+  <a href="PieshkoLab07-2.htm">Елементи форми</a> |
+  <a href="PieshkoLab07-3.htm">Анкета</a> |
+  <a href="PieshkoLab07-4.htm">Замовлення товарів</a>
+</nav>
+<form action="result.htm" method="get">
+  <table class="questionnaire">
+    <thead>
+      <tr><th colspan="3"><h2>Анкета</h2></th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td><label for="surname">Прізвище</label></td>
+        <td><input id="surname" type="text" name="surname" aria-label="Прізвище"></td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td><label for="given_name">Ім’я, по батькові</label></td>
+        <td><input id="given_name" type="text" name="given_name" aria-label="Ім’я, по батькові"></td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td><label for="birth_date">Число і рік народження</label></td>
+        <td><input id="birth_date" type="text" name="birth_date" aria-label="Число і рік народження"></td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td><label for="address">Домашня адреса</label></td>
+        <td><input id="address" type="text" name="address" aria-label="Домашня адреса"></td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td><label for="workplace">Місце навчання (роботи)</label></td>
+        <td><input id="workplace" type="text" name="workplace" aria-label="Місце навчання (роботи)"></td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td><label for="phone">Домашній (робочий) телефон</label></td>
+        <td><input id="phone" type="text" name="phone" aria-label="Домашній (робочий) телефон"></td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td><label for="email">E-mail</label></td>
+        <td><input id="email" type="text" name="email" aria-label="E-mail"></td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td>Область наукових інтересів</td>
+        <td>
+          <ol>
+            <li><input type="text" name="interest1" aria-label="Науковий інтерес 1"></li>
+            <li><input type="text" name="interest2" aria-label="Науковий інтерес 2"></li>
+            <li><input type="text" name="interest3" aria-label="Науковий інтерес 3"></li>
+            <li><input type="text" name="interest4" aria-label="Науковий інтерес 4"></li>
+            <li><input type="text" name="interest5" aria-label="Науковий інтерес 5"></li>
+            <li><input type="text" name="interest6" aria-label="Науковий інтерес 6"></li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">
+          <p><input type="reset" value="Відмінити введення"></p>
+          <p><input type="submit" value="Надіслати дані та перейти до 2 етапу реєстрації"></p>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Замовлення товарів</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+  <a href="PieshkoLab07-2.htm">Елементи форми</a> |
+  <a href="PieshkoLab07-3.htm">Анкета</a> |
+  <a href="PieshkoLab07-4.htm">Замовлення товарів</a>
+</nav>
+<h2>Форма замовлення товарів</h2>
+<form action="result.htm" method="get">
+  <p><label>Номер банківського рахунку:
+    <input type="text" name="bank_account" size="34" maxlength="34">
+  </label></p>
+  <p><label>Особистий номер користувача:
+    <input type="text" name="user_number" size="25" maxlength="30">
+  </label></p>
+  <p><label for="products">Оберіть товари:</label></p>
+  <select id="products" name="products" size="5" multiple>
+    <option value="notebook">Зошит</option>
+    <option value="pen">Ручка</option>
+    <option value="pencil">Олівець</option>
+    <option value="ruler">Лінійка</option>
+    <option value="folder">Папка для документів</option>
+  </select>
+  <p>Вид оплати:<br>
+    <label><input type="radio" name="payment" value="cash" checked> Готівковий розрахунок</label><br>
+    <label><input type="radio" name="payment" value="cashless"> Безготівковий розрахунок</label>
+  </p>
+  <p>Додаткова інформація у відповіді:<br>
+    <label><input type="checkbox" name="balance" value="yes"> Дані про залишки на рахунку</label><br>
+    <label><input type="checkbox" name="recent_payments" value="yes"> Список останніх виплат по рахунку</label>
+  </p>
+  <p><label>Коментарі до замовлення:<br>
+    <textarea name="comments" rows="5" cols="50"></textarea>
+  </label></p>
+  <p>
+    <input type="submit" value="Надіслати замовлення">
+    <input type="reset" value="Очистити форму">
+  </p>
+</form>
+</body>
+</html>

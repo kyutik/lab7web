@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Використання елементів форми</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav>
+  <a href="PieshkoLab07-2.htm">Елементи форми</a> |
+  <a href="PieshkoLab07-3.htm">Анкета</a> |
+  <a href="PieshkoLab07-4.htm">Замовлення товарів</a>
+</nav>
+<h2>Форма з усіма елементами введення</h2>
+<form action="result.htm" method="get">
+  <p><label>Ім’я: <input type="text" name="name" size="30" maxlength="40"></label></p>
+  <p><label>Пароль: <input type="password" name="password" size="20" maxlength="30"></label></p>
+  <p>Стать:
+    <label><input type="radio" name="gender" value="male"> Чоловіча</label>
+    <label><input type="radio" name="gender" value="female"> Жіноча</label>
+  </p>
+  <p><label>Курс навчання:
+    <select name="course">
+      <option value="1" selected>Перший</option>
+      <option value="2">Другий</option>
+      <option value="3">Третій</option>
+      <option value="4">Четвертий</option>
+      <option value="5">П’ятий</option>
+    </select>
+  </label></p>
+  <p>Навички:
+    <label><input type="checkbox" name="skills" value="html" checked> HTML</label>
+    <label><input type="checkbox" name="skills" value="css"> CSS</label>
+    <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+  </p>
+  <p><label>Декілька слів про себе:<br>
+    <textarea name="about" rows="5" cols="45"></textarea>
+  </label></p>
+  <p><label>Прикріпити зображення: <input type="file" name="photo" accept="image/*"></label></p>
+  <p>
+    <input type="button" value="Показати підказку" onclick="alert('Можна обрати кілька навичок. Кнопка очищення повертає початкові значення полів.');">
+    <input type="reset" value="Очистити форму">
+    <input type="submit" value="Надіслати дані">
+  </p>
+</form>
+</body>
+</html>
